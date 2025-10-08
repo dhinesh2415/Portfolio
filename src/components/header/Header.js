@@ -69,12 +69,12 @@ function Header() {
           )}
           {viewProjects && (
             <li>
-              <a href="#blogs">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewEducation && (
             <li>
-              <a href="#talks">Education</a>
+              <a href="#education">Education</a>
             </li>
           )}
           {viewResume && (

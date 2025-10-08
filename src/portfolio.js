@@ -68,8 +68,8 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
     },
-    
-  
+
+
     {
       skillName: "Bootstrap",
       fontAwesomeClassname: "fab fa-bootstrap"
@@ -316,7 +316,7 @@ const achievementSection = {
       image: require("./assets/images/swayam.png"),
       imageAlt: "swayam Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1O2L4aohlErhdDaXA5Go2w1vXRm2bjWhZ/view?usp=drive_link"}
+        { name: "Certification", url: "https://drive.google.com/file/d/1O2L4aohlErhdDaXA5Go2w1vXRm2bjWhZ/view?usp=drive_link" }
       ]
     },
     {
@@ -396,9 +396,8 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  resumeLink: "https://your-resume-link.com", // <-- Add your resume URL here
+  display: true
 };
 
 const contactInfo = {
@@ -413,7 +412,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
