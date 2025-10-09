@@ -1,7 +1,8 @@
-import React, {useState, useEffect, lazy, Suspense} from "react";
-import {openSource} from "../../portfolio";
+import React, { useState, useEffect, lazy, Suspense } from "react";
+import { openSource } from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
+import "./Profile.scss";
 
 const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
@@ -47,6 +48,31 @@ export default function Profile() {
       </Suspense>
     );
   } else {
-    return <Contact />;
+    return (
+      <section id="profile" className="profile-container">
+        <div className="profile-wrapper">
+          {/* Left: Image */}
+          <div className="profile-image-section" data-aos="fade-right">
+            <img
+              src={require("../../assets/images/dhinesh.jpg")}
+              alt="Dhineshkumar"
+              className="profile-image"
+            />
+          </div>
+
+          {/* Right: Text */}
+          <div className="profile-text-section" data-aos="fade-left">
+            <h2 className="profile-name">Dhineshkumar</h2>
+            <p className="profile-bio">
+              I am a passionate <strong>Full Stack Developer</strong> with
+              experience in building web and mobile applications using
+              <strong> JavaScript</strong>, <strong>React</strong>,{" "}
+              <strong>Node.js</strong>, and <strong>Python</strong>. I love
+              learning new technologies and solving real-world problems.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
   }
 }

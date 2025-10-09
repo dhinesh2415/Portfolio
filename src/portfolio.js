@@ -33,8 +33,8 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  // github: "https://github.com/saadpasta",
+  linkedin: "https://www.linkedin.com/in/dhineshkumar-ramasamy-tn33/",
   gmail: "rddhinesh@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
@@ -220,11 +220,11 @@ const bigProjects = {
     {
       image: require("./assets/images/karnal-logo.png"),
       projectName: "Karnal Smart City",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "The scheme provides quality health care to the eligible person through and empanelled government and private hospitals and to reduce the financial hardship.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://www.karnalsmartcity.in/"
+          url: "https://karnalsmartcity.in/"
         }
         //  you can add extra buttons here.
       ]
@@ -232,33 +232,33 @@ const bigProjects = {
     {
       image: require("./assets/images/bocw-logo.png"),
       projectName: "Bihar Building & Other Construction Workers Welfare Board",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "BOCW (Building and Other Construction Workers) is an Indian Act and related Welfare Scheme designed to regulate the employment and conditions of construction workers and provide them with social security benefits. ",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://219.91.197.246:4017/"
         }
       ]
     },
     {
       image: require("./assets/images/tnmvmd.png"),
       projectName: "TamilNadu Motor Vehicle Maintenance Department",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "The TNMVMD is the Tamil Nadu Motor Vehicles Maintenance Department, a government service department responsible for maintaining and repairing all vehicles used by government departments across Tamil Nadu, including those for the Chief Minister's convoy.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://www.tnmvmdapp.tnmvmd.tn.gov.in/"
         }
       ]
     },
     {
       image: require("./assets/images/cmchis.jpg"),
       projectName: "Chief Minister Comprehensive Health Insurance Scheme",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "The scheme provides quality health care to the eligible person through and empanelled government and private hospitals and to reduce the financial hardship.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://61.95.183.3:5000/login"
         }
       ]
     }
@@ -278,7 +278,7 @@ const achievementSection = {
     {
       title: "Cyber Security Essentials (LFC108)",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Completed certification from Linux Foundation.",
       image: require("./assets/images/linux.png"),
       imageAlt: "Linux Foundation Logo",
       footerLink: [
@@ -299,7 +299,7 @@ const achievementSection = {
     {
       title: "Cloud Infrastructure Technolgies (LFS151)",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Completed certification from Linux Foundation.",
       image: require("./assets/images/linux.png"),
       imageAlt: "Linux Foundation Logo",
       footerLink: [
@@ -312,7 +312,7 @@ const achievementSection = {
 
     {
       title: "Database Management System",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      subtitle: "Completed Certifcation from Swayam for DBMS",
       image: require("./assets/images/swayam.png"),
       imageAlt: "swayam Logo",
       footerLink: [
@@ -322,7 +322,7 @@ const achievementSection = {
     {
       title: "Essentials of Python Programming",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Successfully completed Python programming essentials course from Livewire.",
       image: require("./assets/images/livewire.jpg"),
       imageAlt: "livewire Logo",
       footerLink: [
@@ -396,7 +396,7 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  resumeLink: "https://your-resume-link.com", // <-- Add your resume URL here
+  resumeLink: "https://drive.google.com/file/d/1GHhaxLTVBGpt-Ct7hiuCY_HgG_7Gw8xb/view?usp=drive_link", // <-- Add your resume URL here
   display: true
 };
 
@@ -416,6 +416,10 @@ const twitterDetails = {
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
+const ProfileSection = () => {
+  // component code
+};
 
 export {
   illustration,
@@ -437,3 +441,9 @@ export {
   isHireable,
   resumeSection
 };
+
+export const profileSection = {
+  display: true // Set to false to hide profile section
+};
+
+export default ProfileSection;

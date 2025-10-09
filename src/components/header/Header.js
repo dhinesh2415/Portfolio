@@ -7,25 +7,19 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
   achievementSection,
   resumeSection,
-  projectsSection,
-  educationSection,
   bigProjects,
   educationInfo,
+  profileSection, // <-- Added
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const viewProfile = profileSection.display;
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
   const viewProjects = bigProjects.display;
   const viewEducation = educationInfo.display;
@@ -47,6 +41,11 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+          {viewProfile && (
+            <li>
+              <a href="#profile">My Profile</a>
+            </li>
+          )}
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -57,11 +56,6 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {/* {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
-            </li>
-          )} */}
           {viewAchievement && (
             <li>
               <a href="#achievements">Certifications</a>
@@ -86,7 +80,6 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
               <ToggleSwitch />
             </a>
